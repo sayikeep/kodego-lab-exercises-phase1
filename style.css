@@ -8,11 +8,7 @@ header {
     font-family: 'Times New Roman', Times, serif; font-style: italic;
     text-align: center;
     background-color: bisque;
-    padding: 20%;
-}
-
-table, th, td {
-    border: 1.5px solid black;
+    padding: 20px;
 }
 
 nav ul {
@@ -21,13 +17,18 @@ nav ul {
     padding: 0;
 }
 
+table, th, td {
+    border: 1.5px solid black;
+}
+
 nav li {
     display: inline-block;
     margin-right: 20px;
 }
 
-article {
-    margin-bottom: 20px;
+section {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 footer {
