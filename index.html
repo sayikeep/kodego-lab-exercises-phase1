@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<html lang="English">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>helloworld</title>
-        <style>
-            h1 {
-                text-align: left;
-                font-style: italic;
-                font-family: 'Times New Roman', Times, serif;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: aliceblue;
+            padding: 20px;
             }
 
-            div ul {
-                list-style-type: none;
+        header {
+            font-family: 'Times New Roman', Times, serif; font-style: italic;
+            font-size: medium;
+            text-align:left;
+            background-color:bisque;
+            padding: 20px;
             }
-        </style>
-    </head>
-    <body>
+        
+        * {
+            box-sizing: border-box;
+            }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
         <h1>Dzien dobry!</h1>
-            <img src="bali.jpeg" width="250" height="300" style="float: left;">
-            <p style="text-align: center;"> My name is Louise Tancinco-Carbonell, mother of two wonderful boys from Cagayan de Oro City. <br>
-             An English studies graduate who landed a banking and finance job in one of the country's most <br> prominent banking institutions. I'm a language geek by heart. I speak basic Japanese and Korean, <br> and currently I am working to improve my Spanish and Polish language knowledge. I aim to create <br>
-             my language learning website after completing this course.</p>
+        <img src="./bali.jpeg" width="350" height="350" style="float: right;"/> 
+        <ul>
+            <p style="text-align: left;"><a href="aboutme.html">Visit My Page</a></p>
+        </ul>
+    </header>
+    <p> My name is Louise Tancinco-Carbonell, mother of two wonderful boys from Cagayan de Oro City. <br>
+        An English studies graduate who landed a banking and finance job in one of the country's most <br> prominent banking institutions. I'm a language geek by heart. I speak basic Japanese and Korean, <br> and currently I am working to improve my Spanish and Polish language knowledge. I aim to create <br>my language learning website after completing this course.
+    </p>
 
-        <div>
-            <p style="text-align: center;"><b>People Close To Me Say I Am:</b></p>
-            <ul>
-                <li style="text-align: center;">Perceptive</li>
-                <li style="text-align: center;">Compassionate</li>
-                <li style="text-align: center;">Resilient</li>
-            </ul>
-        <div>
-            <p style="text-align: center;"><b>Main Areas for Character Development:</b></p>
-            <ul>
-                <li style="text-align: center;">Unsuspecting</li>
-                <li style="text-align: center;">Headstrong</li>
-                <li style="text-align: center;">Impatient</li>
-            </ul>
+    <div>
+        <p><b>People Close to Me Say I am:</b></p>
+        <ul>
+            <li>Perceptive</li>
+            <li>Compassionate</li>
+            <li>Resilient</li>
+        </ul>
+    </div>
+
+    <div>
+        <p><b>I also tend to be:</b></p>
+        <ul>
+            <li>Unsuspecting</li>
+            <li>Headstrong</li>
+            <li>Impatient</li>
+        </ul>
+    </div>
+
+    <div>
+        <p><b>The things that I Spend My time with:</b></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="./learning.jpeg" width="250" height="250" />
         </div>
-        <div>
-            <ul>
-                <li><a href="aboutme.html">Know more about me here</a></li>
-            </ul>
-        </div>   
-    </body>
+        <div class="column">
+            <img src="./memories.jpeg" controls width="200" height="300"></img>
+        </div>
+        <div class="column">
+            <img src="./pray.jpeg" width="250" height="250" />
+        </div>
+    </div>  
+</body>
 </html>
